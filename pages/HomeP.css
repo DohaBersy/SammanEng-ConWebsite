@@ -1,0 +1,648 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  text-overflow: break-word;
+}
+
+
+
+.homePagebigTitle {
+font-family:'Inter';
+font-style:normal;
+font-weight:400;
+font-size:7vw;
+text-align:center;
+color:#ffffff;
+padding-bottom: 2vh;
+}
+
+.smTit{
+font-family:'Inter';
+font-style:normal;
+font-weight:400;
+font-size:3vw;
+padding-top: 25vw;
+padding-bottom: 4vh;
+color: #ffffff;
+text-align: center;
+animation: text-trans 0.5s linear;
+
+}
+
+.smTit2{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 3vw;
+text-align: center;
+color: #ffffff;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+
+
+.bgpicTransRec{
+
+  /* TranspRecBgHP */
+position: absolute;
+max-width: 100%;
+height: 94.4%;
+
+top: 10%;
+display: block;
+background: rgba(0, 0, 0, 0.4);
+
+}
+.imgM{
+  min-height: 80vh;
+}
+
+
+@media(max-width:30rem){
+  .imgM{
+   min-height: 70vh;
+  } 
+  .smTit{
+    padding-top: 50vw;
+  }
+}
+@keyframes text-trans{
+  from {
+    opacity: 0.8;
+    transform: translateX(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*SECTION 2*/
+
+.verLine {
+ /* Set the height of the vertical line */
+width: 10%;   /* Set the width of the vertical line */
+background-color: #5B3C24; /* Set the color of the vertical line */
+border: 0.1rem solid #5B3C24;
+align-self: center;
+margin-top: 3rem;
+
+}
+
+.Sercicest{
+/* srevicesTitHomepage */
+font-family: 'Outfit';
+font-style: normal;
+font-size: 3.5rem;
+color:#D9B38D;
+margin-top: 3rem;
+text-align: center;
+
+}
+.featPrTit{
+  /* srevicesTitHomepage */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-size: 3.5rem;
+  color:#D9B38D;
+  margin-top: 3rem;
+  text-align: center;
+  word-break: break;
+  
+  }
+
+.servRec{
+width: 100%;
+background:rgba(217, 217, 217, 0.4);
+box-shadow: 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
+border-radius: 1rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+min-height: 14rem;
+
+}
+
+
+
+/* RoadConsIcon */
+.servPic{
+ display: block;
+ max-width: 20%;
+ padding-top: 2rem;
+}
+
+.servicesTex{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  
+  text-align: center;
+  color: #483838;
+  
+/* padding-top:17dvh; */
+}
+.servicesBoxesCon1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:1rem;
+  margin-top: 4rem;
+  place-items: center;
+  max-width: 70%;
+  margin-inline: auto;
+  justify-content: center; 
+
+
+}
+
+@media(max-width:65rem){
+  .servRec{
+    min-height:10rem
+  }
+  .servicesBoxesCon1{
+    grid-auto-flow: row;
+  max-width: 90%;  
+   gap: 2rem; 
+    grid-template-columns: 1fr 1fr ;   
+    margin-inline: auto;
+    place-items: center;
+  }
+  .Sercicest{
+    font-size: 2.5rem;
+  }
+  .servicesTex{
+    font-size: 1.2rem;
+  }
+  .featPrTit{
+    font-size: 2rem;
+  }
+  
+}
+
+@keyframes boxFadeIn{
+  from{
+    opacity: 0.8;
+    scale:0.6;
+    
+  }
+  to{
+    opacity: 1;
+    scale:1;
+  }
+}
+
+
+@keyframes lineFadeIn{
+  from{
+    opacity: 0.8;
+    scale:0;
+    
+  }
+  to{
+    opacity: 1;
+    scale:1;
+  }
+}
+
+
+/*SECTION 3*/
+.wid1Container{
+  display: flex;
+  justify-content: center;
+  z-index: 4;
+}
+
+.wid1{
+  /* empprojempRect */
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin-inline: auto;
+margin-top: 10rem;
+position: absolute;
+min-height: 12rem;
+min-width:70%;
+max-width: 100%;
+align-items: center;
+z-index: 4;
+background: #D9B38D;
+border-radius: 2rem;
+}
+
+
+.wid1T{
+ 
+  font-family: 'Outfit';
+  font-style: normal; 
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 2;
+  color: #ffffff;
+  
+  
+  }
+
+  @media(max-width:65rem){
+    .wid1{
+      display:grid;
+      grid-auto-flow: row;
+      grid-template-columns: 1fr;
+      margin-inline: auto;    
+      position: absolute;
+      min-height: 12rem;
+      gap:3rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      max-width: 60%;
+      align-items: center;
+      z-index: 4;
+      background: #D9B38D;
+      border-radius: 0.6rem;
+      opacity: 0.9;
+    }
+    
+  }
+
+
+  .container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 16rem;
+    
+      
+  }  
+  .left-side {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #433327; /* Optional background color */
+    
+  } 
+  .right-sideImg {
+    min-height: 100%; /* Full height of the container */
+    opacity: 90%; 
+    display: block;
+    
+  }
+  .right-side{
+    
+    height: 100%;
+    position: relative; /* Container must be positioned relative */
+    display: flex;
+  }
+  .trans{
+    position: absolute;
+    background-color:rgb(46, 22, 7,0.5);
+    z-index: 3;
+    height: 100%;
+    width:100%;
+    top:0;    
+  }
+  .Miss{
+    font-family: 'Prata';
+    font-size: 5rem;
+    color: #ffffff;
+    padding-bottom: 5rem;
+    padding-top: 8rem;  
+  }
+  .misTit{
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding-bottom: 2rem;
+  }
+  .misText{
+    font-family: 'Outfit';
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: justify;
+    padding-bottom:3rem;
+    line-height: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .leftSideCh{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .misPic{
+    width: 3rem;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .visPic{
+    position: absolute;
+    width: 74px;
+    height: 88px;
+    left: 55px;
+    top: 75%;
+  }
+
+@media(max-width:65rem){
+  
+  .container{
+    grid-auto-flow:row;
+    grid-template-columns: 1fr;   
+  }
+
+  .right-side{
+    grid-row-start: 1;
+    grid-row-end: 1;   
+    width: 90%;
+    margin: auto;
+  }
+
+  .Miss{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .misTit{
+    font-size: 2rem;
+  }
+
+  .misText{
+    font-size: 1.2rem;
+    text-align: left;
+    padding-right: 1rem;
+  }
+  
+
+}
+
+
+/*featuredProj section4*/
+
+
+
+.bgTextCont{
+ width:100%;
+  left:10%;
+  right:10%;
+ display: flex;
+ justify-content: center;
+ border:2px solid #433327;
+}
+
+.photo-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 0rem; /* Adjust the gap between items */
+  max-width:90%; /* Adjust the maximum width */
+  margin: auto; /* Center the grid */
+  padding-top: 3rem;
+}
+
+.photo-grid img {
+  width: 100%; /* Full width of the grid item */
+  height: 100%; /* Full height of the grid item */
+  object-fit: cover; /* Ensure the image covers the grid item */
+}
+
+
+
+.featPr-textContainer{
+  background-color: #ffffff;
+  position:absolute;
+  z-index: 2;
+  margin-left: 15%;
+}
+
+
+.featPrtxt{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #433327;
+  padding: 1rem;
+}
+
+@media(max-width:65rem){
+  .photo-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .featPrtxt{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: auto;
+
+    
+  }.featPr-textContainer{
+    margin: auto;
+  }
+}
+
+
+.fl{
+  display:flex;  
+  width: 100%;
+  justify-content: center;
+}
+
+/*Logos*/
+
+.logosGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 2rem; /* Adjust the gap between items */
+  max-width:90%; /* Adjust the maximum width */
+  margin: auto; 
+  margin-bottom: 5rem;
+}
+
+.hay2aLogo{
+  width:65%;
+  flex: 1; 
+  height: auto; 
+  margin: auto;
+}
+
+@media(max-width:65rem){
+  .logosGrid{
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4rem;
+  }
+}
+
+.image-container {
+  position: relative; /* Container must be positioned relative */
+  display: inline-block;
+  min-height:70vh; /* Adjust as needed for your layout */
+}
+
+.image-container img {
+  display: block; /* Ensure the image takes full container width */
+  width: 100%; /* Responsive width */
+  height: 100; /* Maintain aspect ratio */
+  position: relative;
+}
+
+
+.transRecConUs {
+  position: absolute; /* Position absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+
+.verLineConUs {
+  /* Set the height of the vertical line */
+ width: 8rem;   /* Set the width of the vertical line */
+ background-color: #ffffff; /* Set the color of the vertical line */
+ border: 0.1rem solid #ffffff; 
+ align-self: center;
+ z-index: 2;
+ }
+ 
+ .ConUsT{
+  
+ font-family: 'Outfit';
+ font-style: normal; 
+ font-size: 4rem;
+ height: fit-content;
+ color:#ffffff;
+ z-index:2;
+ align-self:flex-start;
+
+ }
+
+ .flcon{
+  display:flex;  
+  min-width: 100%;
+  height:fit-content;
+  justify-content: center;
+  top:0;
+}
+/*for refernce*/
+
+ .overlay-text {
+  top: 50%;
+  left: 50%;
+  color: white; /* Text color */
+  /* Semi-transparent background for readability */
+  padding: 10px; /* Padding around the text */
+  font-size: clamp(12px, 2vw, 24px); /* Responsive font size using clamp() */
+  text-align: center; /* Center text */ 
+}
+
+.conUsLayout{
+  display:flex;
+  flex-direction: column;
+  top:0;
+  align-items: center;
+  z-index:2;
+  position: absolute;
+  width: 100%;
+  
+}
+
+.conBig{
+  display:grid;
+  grid-template-columns: 1fr 2fr ;
+  width:100%;
+  padding-top:5rem;
+}
+
+
+.conUsRight{
+display: flex;
+flex-direction: column;
+gap:3rem;
+padding-left: 2rem;
+}
+
+.conUsRightCh{
+  display:flex;
+  flex-direction: row; 
+  gap:2rem;
+  margin-top:2.5rem;
+}
+.conUsRightChF{
+  display:flex;
+  flex-direction: row; 
+  gap:2rem;
+  
+}
+
+.conUsIcon{
+
+max-width:6%;
+height:auto;
+flex:1;
+
+}
+.conUsSmallTextinhpFooter{
+font-family: 'Roboto';
+font-style: normal;
+color: #FFFFFF;
+font-size: 1.8rem
+}
+
+
+
+.imgMcu{
+  min-height: 70vh;
+}
+.conUsLeft{
+  width:100%;
+  height: 100%;
+}
+
+@media(max-width:65rem){
+ .conBig{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  grid-auto-flow: row;
+ } 
+ .conUsRight{
+  grid-row-start: 1;
+  width: 100%;
+  gap: 1rem;
+ }
+ .ConUsT{
+  font-size:2rem;
+ }
+ .conUsSmallTextinhpFooter{
+  font-size: 1.2rem;
+ }
+ .verLineConUs{
+  width: 4rem;
+ }
+ .conUsLeft img{
+  max-width: 25vw; /* Ensures the image does not exceed the container width */
+  height: auto; /* Maintains the aspect ratio */
+  margin-inline: auto;
+  padding-top: 1rem;
+
+  display: block;
+ 
+ }
+ 
+}

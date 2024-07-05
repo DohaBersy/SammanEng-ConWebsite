@@ -1,0 +1,285 @@
+.wholePage{
+   display:grid;
+  grid-template-columns: 1fr 1fr;
+
+  width:100%;
+ 
+  position: absolute;
+}
+
+.row{
+  
+  width: 100%;
+}
+
+.rowOurSer{
+  grid-column: span 2;
+
+}
+
+.rowText{
+  grid-column: span 2;
+}
+
+
+.rowr{
+ grid-column: span 2;
+  padding-left: 50%;
+}
+
+.rowr2{
+  grid-column: span 2;
+   padding-left: 50%;
+ }
+
+ .rowr3{
+  grid-column: span 2;
+   padding-left: 50%;
+ }
+.rowl{
+  grid-column: span 2;  
+  margin-right: 50%;
+ text-align: right;
+ 
+}
+
+.rowl2{
+  grid-column: span 2;  
+  margin-right: 50%;
+ text-align: right;
+ 
+}
+
+.rowl3{
+  grid-column: span 2;  
+  margin-right: 50%;
+ text-align: right;
+ 
+}
+.rowelPic{
+width: 100%;
+}
+
+.rowelPic2{
+  width: 100%;
+  }
+
+  .rowelPic3{
+    width: 100%;
+    }
+
+
+    .rowelPic4{
+      width: 100%;
+      }   
+
+
+      .rowelPic5{
+        width: 100%;
+        }  
+        
+        
+        .rowelPic6{
+          width: 100%;
+          }      
+  .rowelText{
+width:85%;
+margin:auto;
+
+}
+
+.rowelText2{
+  width:85%;
+  margin:auto;
+  
+  }
+
+  .rowelText3{
+    width:85%;
+    margin:auto;
+    
+    }
+    .rowelText4{
+      width:85%;
+      margin:auto;
+      
+      } 
+      
+      .rowelText5{
+        width:85%;
+        margin:auto;
+        
+        }  
+        
+        
+        .rowelText6{
+          width:85%;
+          margin:auto;
+          
+          }
+
+.ourSerText{ 
+font-family: 'Inter';
+font-size: 1.5rem;
+color: #D9B38D;
+padding-left: 2rem;
+padding-top: 6rem;
+}
+
+
+
+.serTitText{
+font-family: 'Kameron';
+font-size: 6rem;
+color: #483838;
+font-weight: 700;
+color: #483838;
+
+
+}
+.img {
+  height: 100%; /* Full height of the container */
+ width:100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container area */
+}
+.txt{
+  /* RoadConText */
+text-align: left;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5vw;
+color: #000000;
+line-height: 3vw;
+}
+
+.footer{
+  grid-column: span 2;
+}
+
+@media(max-width:65rem){
+.wholePage{
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  width: 100%;
+}
+.ourSerText{
+  font-size: 1rem;
+  padding-top: 5rem;
+}
+.rowelText{
+  
+  grid-row-start: 4;
+  margin-bottom: 2rem;
+}
+.txt{
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: left;
+}
+.serTitText{
+  font-size: 3rem;
+  text-align: center;
+}
+.rowl{
+  grid-column: span 1;
+  grid-row-start: 2;
+  margin: auto;
+}
+
+.rowr{
+  grid-column: span 1;
+  grid-row-start: 5;
+  margin: auto;
+  padding: 0;
+}
+.rowOurSer{
+  grid-column:span 1 ;
+  grid-row-start: 1;
+}
+.rowelPic{
+  grid-row-start: 3;
+  width:90%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.rowelPic2{
+  grid-row-start: 6;
+  width:90%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.rowelPic3{
+  grid-row-start: 9;
+  width:90%;
+  margin: auto;
+  margin-bottom: 2rem;
+
+}
+.rowelPic4{
+  grid-row-start: 12;
+  width:90%;
+  margin: auto;
+  margin-bottom: 2rem;
+
+}
+.rowelPic5{
+  grid-row-start: 15;
+  width:90%;
+  margin: auto;
+  margin-bottom: 2rem;
+
+}
+.rowelPic6{
+  grid-row-start: 18;
+  width:90%;
+  margin: auto;
+  margin-bottom: 2rem;
+
+}
+.rowelText2{
+  grid-row-start: 10;
+  margin-bottom: 2rem;
+}
+
+.rowelText3{
+  grid-row-start: 7;
+  margin-bottom: 2rem;
+
+}
+.rowelText4{
+  grid-row-start: 13;
+  margin-bottom: 2rem;
+
+}
+.rowelText5{
+  grid-row-start: 16;
+  margin-bottom: 2rem;
+}
+.rowelText6{
+  grid-row-start: 19;
+  margin-bottom: 2rem;
+}
+.rowl2{
+  grid-row-start: 8;
+  margin: auto;
+
+}
+.rowl3{
+  grid-row-start: 14;
+  margin: auto;
+
+}
+.rowr2{
+  grid-row-start: 11;
+  padding: 0;
+  margin: auto;
+
+}
+.rowr3{
+  grid-row-start: 17;
+  padding: 0;
+  margin: auto;
+
+}
+}

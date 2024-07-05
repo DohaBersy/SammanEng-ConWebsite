@@ -1,0 +1,133 @@
+.firstContainer
+{
+  padding-top:2rem;
+  display:grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  gap:1.5rem;
+  margin-inline: auto;
+}
+
+.secondContainer
+{
+  padding-top:90px;
+  display:grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  gap:1.5rem;
+  margin-inline: auto;
+  margin-bottom: 5rem;
+}
+
+img
+{
+  display: block;
+  max-width:100%;
+}
+
+.bgImg{
+  animation: fade-in  linear;
+  animation-timeline: view();  
+}
+
+@keyframes fade-in{
+  from{scale:0.8;opacity: 0.8;}
+  to{scale:1;opacity:1 }
+}
+.txt-in-first-con
+{
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-align: left;
+  color: #000000;
+  margin-inline: auto;
+  width:90%;
+}
+.belowPicTxt
+{
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-align: center;
+  color: #000000;
+  margin-inline: auto;  
+  margin-bottom: 3rem;
+}
+
+
+
+.datesColor
+{
+  color: #D9B38D;
+  display: inline;
+}
+
+.our-projects-tit
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 2rem;
+  padding-top: 80px;;
+  text-align: left;
+  color: #D9B38D;
+}
+
+.Projects-tit
+{
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 6rem;
+color: #483838;
+}
+
+.featPr-tit{ 
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 2rem;
+line-height: 4rem;
+padding-top: 3rem;
+color: #D9B38D;
+}
+
+
+@media(max-width:80rem){
+  .firstContainer
+  {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media(max-width:70rem){
+  .txt-in-first-con
+  {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    width: 90%;
+    margin: auto;
+  }
+  .featPr-tit{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+  .Projects-tit{
+    font-size: 3rem;
+  }
+  .belowPicTxt{
+    font-size: 1rem;
+  }
+  .our-projects-tit{
+    font-size: 1.5rem;
+  }
+  .padded{
+    padding-left: 4rem;
+  }
+}
